@@ -1,3 +1,5 @@
+## Intrusion Detection System (IDS) using machine learning algorithms
+
 A simple Intrusion Detection System (IDS) using machine learning algorithms, specifically Random Forest, Logistic Regression, and K-Nearest Neighbors. The integration of a heatmap (from Seaborn) and the machine learning models contributes to the threat detection process. Here's how the code works in detecting threats:
 
 Dataset Loading and Preprocessing:
