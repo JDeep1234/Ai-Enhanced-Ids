@@ -16,7 +16,7 @@ import numpy as np
 data_columns = ["Fwd Seg Size Min", "Init Bwd Win Byts", "Init Fwd Win Byts", "Fwd Seg Size Min", "Fwd Seg Size Avg", "Label", "Timestamp"]
 data_dtypes = {"Fwd Pkt Len Mean": float, "Fwd Seg Size Avg": float, "Init Fwd Win Byts": int, "Init Bwd Win Byts": int, "Fwd Seg Size Min": int, "Label": str}
 date_col = ["Timestamp"]
-raw_data = pd.read_csv("C:\\Users\\Jnyanadeep\\Desktop\\ddos_dataset.csv", usecols=data_columns, dtype=data_dtypes, parse_dates=date_col, index_col=None)
+raw_data = pd.read_csv("path", usecols=data_columns, dtype=data_dtypes, parse_dates=date_col, index_col=None)
 sorted_data = raw_data.sort_values("Timestamp")
 processed_data = sorted_data.drop(columns=["Timestamp"])
 
